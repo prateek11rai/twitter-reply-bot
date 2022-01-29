@@ -4,16 +4,19 @@ import time
 print("this is my twitter bot")
 
 
-CONSUMER_KEY = '3KMw3fHpwVnXxcfkurtcrV97f'
-CONSUMER_SECRET = 'SuftKH8NJDXgAh4eAtqRHZaRuLZIfz98fugp5bucRha0e6mnxD'
-ACCESS_KEY = '1276046672292790272-xlqzUb9MlTS1cLjCnvAQuVWM56SYTD'
-ACCESS_SECRET = 'y8PKpc9hpS41Hlivf0ujUDA7dfvlqdr0YsWKqtksmZAnU'
+# use ids that you get after making a twitter developers account
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+ACCESS_KEY = ''
+ACCESS_SECRET = ''
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
+# to store last scene tweet and retrive the id
 FILE_NAME='last_seen_id.txt'
+
 
 def retrieve_last_seen_id(file_name):
     f_read = open(file_name, 'r')
