@@ -1,6 +1,6 @@
 # Twitter Reply Bot
 
-## Project Discription : 
+## Project Description : 
 
 This is a twitter bot written in python which comments (replies) on any tweets that mention the bot account and use a specific hashtag (#reply in this case) in the tweet. This is a starting project to understand twitter APi and to understand how and what an API is.  [ The main file is the bot_kixi.py file ]
 
